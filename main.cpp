@@ -102,7 +102,7 @@ void loadUser()                        //read the file in which the login detail
     cout << "Loaded " << users.size() << " users.\n";
 }
 void saveStudents() {
-    ofstream fout("students.txt");
+    ofstream fout("student.txt");
     for (int i = 0; i < students.size(); i++) {                             //save the student when any opereation can do with this
         fout << students[i].id << " "<< students[i].name << " "<< students[i].className << " "<< students[i].age << "\n";
     }
@@ -110,7 +110,7 @@ void saveStudents() {
     cout << "------------Students saved successfully.----------\n";
 }
 void saveTeachers() {
-    ofstream fout("teachers.txt");
+    ofstream fout("teacher.txt");
     for (int i = 0; i < teachers.size(); i++) {                 //save the teacher when any data can be change
         fout << teachers[i].id << " "<< teachers[i].name << " "<< teachers[i].subject << "\n";
     }
@@ -118,7 +118,7 @@ void saveTeachers() {
     cout << "----------Teachers saved successfully.---------\n";
 }
 void saveUsers() {
-    ofstream fout("users.txt");
+    ofstream fout("user.txt");
     for (int i = 0; i < users.size(); i++) {
         fout << users[i].username << " "<< users[i].password << "\n"; //save the user information when updated
     }
